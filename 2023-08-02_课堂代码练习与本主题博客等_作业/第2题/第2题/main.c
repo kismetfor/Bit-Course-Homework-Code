@@ -25,20 +25,4 @@ int main(int argc, const char * argv[]) {
     printf("%zd\n", strlen(a));
     // /0的ASCLL码为0, 碰到为0就找到
     return 0;
-    git config --global user.name "Han"
-    git config --global user.email "kismetfor33455@163.com"
-    ssh-keygen -t rsa -C "kismetfor33455@163.com"
-    /Users/rain/.ssh/id_rsa.pub
-    mkdir learngit
-    cd learngit
-    pwd
-    git add sample.txt
-    git status
-    git remote add origin https://kismetfor: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@github.com/kismetfor/2023-oj.git
-    
-    Username for 'https://github.com': kismetfor
-    Password for 'https://your_username@github.com': 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@github.com
-        
-        git push -u origin main -u kismetfor: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@github.com
-
 }
