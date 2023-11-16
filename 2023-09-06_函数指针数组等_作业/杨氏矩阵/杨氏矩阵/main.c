@@ -13,7 +13,12 @@
 //
 #include <stdio.h>
 
+int find(int* arr, int sz){
+    
+}
+
 int main(int argc, const char * argv[]) {
-    int arr[][]
+    int arr[3][3] = {{1,2,3},{4,5,6},{7,8,9}};
+    int sz =sizeof(arr)/sizeof(arr[0]);
     return 0;
 }
