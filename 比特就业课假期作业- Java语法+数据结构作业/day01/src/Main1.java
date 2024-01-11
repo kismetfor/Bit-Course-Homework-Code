@@ -7,6 +7,38 @@ public class Main1 {
      OJ链接 【难度：简单】
      */
     public static void main(String[] args) {
+//        float f = 1.9f;
+//        int i = (int)f;
+//        System.out.println(i);
+        int x = 2;
+        int ret;
+        int left = 1;
+        int right = x/2;
+        while (true) {
+            if (left*left == x) {
+                System.out.println(left);
+                break;
+            }
+            if (right*right==x) {
+                System.out.println(right);
+                break;
+            }
+            ret = (left+right)/2;
+            if (ret*ret < x) {
+                left = ret;
+            } else if (ret*ret > x) {
+                right = ret;
+            } else {
+                //刚好找到的情况
+                System.out.println(ret);
+                break;
+            }
+            if (right-left==1) {
+                System.out.println(left);
+                break;
+                //这时候已经缩小到整数中的最小范围了
+            }
+        }
 
     }
 }
