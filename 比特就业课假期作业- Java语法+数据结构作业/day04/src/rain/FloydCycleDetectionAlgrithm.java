@@ -8,6 +8,13 @@ class ListNode {
         this.value = value;
         this.next = null;
     }
+
+    @Override
+    public String toString() {
+        return "ListNode{" +
+                "value=" + value +
+                '}';
+    }
 }
 public class FloydCycleDetectionAlgrithm {
     public static void main(String[] args) {
@@ -32,6 +39,31 @@ public class FloydCycleDetectionAlgrithm {
         node7.next = node1;
         node8.next = node5;
         node9.next = node2;
-    }
 
+        ListNode node = Find(node0);
+        System.out.println(node);
+    }
+    public static ListNode Find(ListNode head) {
+        ListNode slow  = head;
+        ListNode fast = head;
+
+        while (true) {
+            slow = slow.next;
+            fast = fast.next.next;
+            //第一次相遇
+            //if slow and fast meet, then break the loop
+            if (fast == slow) {
+                break;
+            }
+        }
+        //第二次相遇
+        slow = head;
+        while (true) {
+            slow = slow.next;
+            fast = fast.next;
+            if (fast == slow) {
+                return fast;
+            }
+        }
+    }
 }
