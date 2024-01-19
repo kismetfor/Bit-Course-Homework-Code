@@ -23,6 +23,6 @@ public class Main5 {
         return sum;
     }
     public static void main(String[] args) {
-        System.out.println(isHappy(3));
+        System.out.println(isHappy(19));
     }
 }
