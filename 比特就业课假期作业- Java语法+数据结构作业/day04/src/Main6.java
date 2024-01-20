@@ -11,11 +11,7 @@ public class Main6 {
                 n /= 3;
             } else if (n%5 == 0) {
                 n /= 5;
-            } else if (n==1) {
-                return true;
-            } else {
-                return false;
-            }
+            } else return n==1;
         }
     }
 
