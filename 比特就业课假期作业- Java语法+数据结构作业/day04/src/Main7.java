@@ -12,7 +12,7 @@ public class Main7 {
                 return false;
             }
         }
-        return n != 0;
+        return n == 1;
     }
 
     public static void main(String[] args) {
